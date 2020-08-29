@@ -2,6 +2,8 @@
   <div id="app">
     <Home />
     <History />
+    <Climb />
+    <Footer />
   </div>
 </template>
 
@@ -9,6 +11,8 @@
 <script>
 import Home from "./components/Home";
 import History from "./components/History";
+import Climb from "./components/Climb";
+import Footer from "./components/Footer";
 
 export default {
   data() {
@@ -17,6 +21,8 @@ export default {
   components: {
     Home,
     History,
+    Climb,
+    Footer,
   },
 };
 </script>

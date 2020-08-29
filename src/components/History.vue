@@ -16,12 +16,10 @@
 
           <p class="history-story">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum quam corrupti
-            ullam minus nobis
-            suscipit culpa quos excepturi! Recusandae laudantium similique ut incidunt nemo natus quam numquam,
-            non enim eius, quaerat voluptas doloribus tenetur voluptatem consequatur rerum, vitae minima
-            excepturi? Expedita provident vel saepe dolores optio aliquam voluptates illo ipsam? Natus, rerum
-            earum nostrum, aliquam iste veritatis quis recusandae beatae, vitae. Eligendi quae perspiciatis.
-            Animi qui omnis sit, voluptate eaque nam ea nisi doloribus exercitationem ipsum ex ipsa ipsum!
+            ullam minus nobis suscipit culpa quos excepturi! Recusandae laudantium similique ut incidunt nemo
+            natus quam numquam, non enim eius, quaerat voluptas doloribus tenetur voluptatem consequatur rerum,
+            vitae minima excepturi? Expedita aliquam voluptates illo ipsam minus nobis suscipit culpa quos
+            exceptur m, dolor sit amet consectei suscipit?
           </p>
         </div>
 
@@ -79,11 +77,11 @@ export default {
           },
           768: {
             slidesPerView: 3,
-            spaceBetween: 30,
+            spaceBetween: 25,
           },
           1024: {
             slidesPerView: 4,
-            spaceBetween: 40,
+            spaceBetween: 20,
           },
         },
       },
