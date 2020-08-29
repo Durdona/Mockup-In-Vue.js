@@ -29,20 +29,19 @@
           <!-- Carousel -->
           <div class="container">
             <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide one"></div>
-                <div class="swiper-slide two"></div>
-                <div class="swiper-slide three"></div>
-                <div class="swiper-slide four"></div>
-                <div class="swiper-slide five"></div>
-                <div class="swiper-slide six"></div>
-                <div class="swiper-slide seven"></div>
-                <div class="swiper-slide eight"></div>
-                <div class="swiper-slide nine"></div>
-                <div class="swiper-slide ten"></div>
-              </div>
-              <!-- Add Pagination -->
-              <div class="swiper-pagination"></div>
+              <swiper class="swiper-wrapper" :options="swiperOption">
+                <swiper-slide class="swiper-slide one"></swiper-slide>
+                <swiper-slide class="swiper-slide two"></swiper-slide>
+                <swiper-slide class="swiper-slide three"></swiper-slide>
+                <swiper-slide class="swiper-slide four"></swiper-slide>
+                <swiper-slide class="swiper-slide five"></swiper-slide>
+                <swiper-slide class="swiper-slide six"></swiper-slide>
+                <swiper-slide class="swiper-slide seven"></swiper-slide>
+                <swiper-slide class="swiper-slide eight"></swiper-slide>
+                <swiper-slide class="swiper-slide nine"></swiper-slide>
+                <swiper-slide class="swiper-slide ten"></swiper-slide>
+                <div class="swiper-pagination" slot="pagination"></div>
+              </swiper>
             </div>
           </div>
         </div>
@@ -53,10 +52,41 @@
 
 <script>
 import Menu from "./Menu";
+import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+// import Swiper from "swiper";
+import "swiper/css/swiper.css";
+
 export default {
   name: "History",
   data() {
     return {
+      swiperOption: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+      },
       navLinks: [
         {
           text: "01. history",
@@ -69,11 +99,11 @@ export default {
       ],
     };
   },
-  components: { Menu },
+  components: { Menu, Swiper, SwiperSlide },
 };
 </script>
 
-<style  lang="scss"  >
+<style  lang="scss">
 #history .history-menu-wrapper .ul-menu li a {
   color: #414f6b;
   &:hover {
@@ -128,5 +158,46 @@ export default {
     padding: 0 10%;
     margin-top: -40px;
   }
+}
+/* =========================== Carousel  ======================== */
+#carousel {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 23vh;
+  background: rgba(65, 79, 107, 0.7);
+  width: 100vw;
+  overflow: hidden;
+}
+.swiper-container {
+  margin-top: 8px;
+  height: 21vh;
+  width: 100%;
+
+  .one,
+  .three,
+  .five,
+  .seven,
+  .nine {
+    background: url("../assets/thumbnail.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+  }
+  .two,
+  .four,
+  .six,
+  .eight,
+  .ten {
+    background: url("../assets/thumbnail1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+  }
+}
+:root {
+  --swiper-theme-color: lightgrey !important;
 }
 </style>
