@@ -100,6 +100,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 25vh;
 }
 .climb-headline {
   position: relative;
@@ -125,6 +126,7 @@ export default {
   width: 70%;
   padding-right: 5%;
   padding-left: 5%;
+  line-height: 1.5rem;
 }
 //  ++++++++++++++++++++ Building Tab ++++++++++++++++++++
 .climb-background {

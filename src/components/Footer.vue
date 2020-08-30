@@ -24,5 +24,29 @@
 export default {};
 </script>
 
-<style>
+<style lang="scss" >
+footer {
+  background: rgba(65, 79, 107, 0.9);
+}
+.footer-copyright {
+  text-transform: uppercase;
+  font-size: 8px !important;
+  font-style: italic;
+  color: #63769d;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.logo-headline-wrapper {
+  display: flex;
+  flex-flow: column;
+  padding-left: 4%;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  line-height: 2rem;
+  & .losangeles,
+  & .mountains {
+    color: #63769d;
+  }
+}
 </style>
