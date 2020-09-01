@@ -82,6 +82,11 @@
         <router-link :to="link.path">{{link.text}}</router-link>
       </li>
     </ul>
+    <div class="hamburger" @click="showMenu()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
   </nav>
 </template>
 
@@ -94,6 +99,11 @@ export default {
     };
   },
   props: ["navLinks"],
+  methods: {
+    showMenu() {
+      document.querySelector(".ul-menu").classList.toggle("open");
+    },
+  },
 };
 </script>
 
@@ -147,7 +157,7 @@ export default {
   align-items: center;
 
   &-wrapper {
-    display: flex;
+    // display: flex;
     flex-flow: column;
     padding-left: 4%;
     text-transform: uppercase;
@@ -163,6 +173,63 @@ export default {
   &-wrapper .mountains {
     color: #414f6b;
     letter-spacing: 1.8px;
+  }
+}
+// ====================== Responsive Design ===============================
+@media (max-width: 500px) {
+  .nav-menu {
+    padding-top: 5%;
+  }
+  .logo-headline {
+    margin-left: 5%;
+  }
+  .hamburger {
+    cursor: pointer;
+    margin-right: 5%;
+    z-index: 2;
+  }
+  .line {
+    width: 30px;
+    height: 3px;
+    background: #414f6b;
+    margin: 5px;
+  }
+  .ul-menu {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.9);
+    height: 100vh;
+    width: 100%;
+    margin-top: 25%;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(100px at 40% -20%);
+    -webkit-clip-path: circle(100px at 90% -20%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .ul-menu.open {
+    clip-path: circle(1005px at 40% -10%);
+    -webkit-clip-path: circle(1005px at 90% -10%);
+    pointer-events: all;
+  }
+  .ul-menu li {
+    padding-top: 80px;
+  }
+  .ul-menu li a {
+    color: black;
+  }
+  .ul-menu li a:after {
+    border-bottom: 1px solid black;
+  }
+}
+/*  ==================== Smartphones in landscape mode  ==================== */
+@media (min-width: 414px) and (max-width: 920px) and (orientation: landscape) {
+  .nav-menu {
+    height: 8vh;
+  }
+  #logo {
+    padding-top: 10px;
+    padding-left: 10px;
   }
 }
 </style>

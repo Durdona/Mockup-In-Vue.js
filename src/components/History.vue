@@ -68,7 +68,7 @@ export default {
         },
         breakpoints: {
           320: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 10,
           },
           640: {
@@ -197,5 +197,79 @@ export default {
 }
 :root {
   --swiper-theme-color: lightgrey !important;
+}
+
+// ====================== Responsive Design ===============================
+@media (max-width: 500px) {
+  #history .container {
+    padding: 0;
+  }
+  #history .hamburger {
+    display: none;
+  }
+  #history header .nav-menu {
+    padding-top: 0;
+    height: 16vh;
+  }
+  .history-headline {
+    padding-bottom: 0;
+    margin-top: -10%;
+  }
+  .history-title {
+    left: 170px;
+    bottom: 72px;
+    color: rgba(65, 79, 107, 0.9);
+
+    &-number {
+      font-size: 10.5rem;
+    }
+  }
+  .history-story {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px 4%;
+    margin-top: -25px;
+  }
+}
+
+/*  ==================== Smartphones in landscape mode  ==================== */
+@media (min-width: 414px) and (max-width: 920px) and (orientation: landscape) {
+  #history header .nav-menu {
+    padding-top: 0;
+    justify-content: center;
+    height: 28vh;
+  }
+  .history-title-number {
+    font-size: 10rem;
+    position: absolute;
+  }
+  .history-title {
+    left: 167px;
+    position: absolute;
+    top: 98px;
+    color: rgba(65, 79, 107, 0.5);
+  }
+  .history-story {
+    background: rgba(255, 255, 255, 0.5);
+    padding-top: 5.5%;
+    margin-top: -3%;
+    line-height: 1.4rem;
+    height: 74%;
+  }
+  .history-headline {
+    padding-bottom: 0;
+  }
+  #carousel {
+    height: 34vh;
+  }
+  .swiper-container {
+    height: 30vh;
+    // overflow-y: hidden;
+  }
+  .swiper-wrapper {
+    margin-top: 0px;
+  }
+  .swiper-slide {
+    height: auto;
+  }
 }
 </style>

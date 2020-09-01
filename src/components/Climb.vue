@@ -206,4 +206,71 @@ h1 {
   line-height: 2.5rem;
   font-size: 1.3rem;
 }
+// ====================== Responsive Design ===============================
+@media (max-width: 500px) {
+  .climb-header {
+    display: inline-block;
+    height: auto;
+  }
+  .climb-title-number {
+    font-size: 10.5rem;
+  }
+  .climb-title {
+    color: rgba(65, 79, 107, 0.9);
+    bottom: 70px;
+    left: 190px;
+  }
+  .climb-paragraph {
+    padding: 5%;
+    border-radius: 7px;
+    width: 100%;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    line-height: 1.4rem;
+  }
+  .climb-tab-menu {
+    justify-content: space-evenly;
+  }
+}
+
+/*  ==================== Smartphones in landscape mode  ==================== */
+.mountain1-background,
+.mountain2-background {
+  margin: auto;
+  width: 70%;
+}
+#mountain1-content,
+#mountain2-content {
+  margin: auto;
+  padding-top: 0;
+  line-height: 2rem;
+}
+h1 {
+  text-align: center;
+}
+.climb-title-number {
+  font-size: 10rem;
+}
+.climb-title {
+  bottom: 66px;
+  left: 175px;
+}
+.climb-header {
+  height: 57%;
+}
+.climb-paragraph {
+  width: 55%;
+  margin-top: 40px;
+  font-size: 1rem;
+}
+#mountain1,
+#mountain2 {
+  padding-top: 2%;
+  // line-height: 2.5rem;
+}
+.climb-tab-menu {
+  justify-content: normal;
+  width: 70%;
+  margin: auto;
+}
 </style>

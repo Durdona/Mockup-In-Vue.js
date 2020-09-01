@@ -87,4 +87,56 @@ export default {
     letter-spacing: 5px;
   }
 }
+// ====================== Responsive Design ===============================
+/*  ===================  Smartphones in portrait mode   =====================  */
+
+@media (max-width: 500px) {
+  // body,
+  // html {
+  //   overflow-y: hidden;
+  // }
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .headline-mask .losangeles {
+    font-size: 5rem;
+    position: absolute;
+    top: 38%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 1px;
+  }
+  .headline-mask .mountains {
+    font-size: 5rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 47%;
+    left: 48%;
+    letter-spacing: 4px;
+    /* transform: translate(-50%, -50%); */
+  }
+}
+
+/*  ==================== Smartphones in landscape mode  ==================== */
+@media (min-width: 414px) and (max-width: 920px) and (orientation: landscape) {
+  .headline-mask .losangeles {
+    font-size: 4.5rem;
+    position: absolute;
+    top: 29%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 1px;
+  }
+  .headline-mask .mountains {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 44%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 4px;
+  }
+}
 </style>>

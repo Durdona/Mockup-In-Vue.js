@@ -45,4 +45,17 @@ export default {
 .container {
   padding: 0 15%;
 }
+@media (max-width: 500px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 414px) and (max-width: 920px) and (orientation: landscape) {
+  /* @media (min-width: 421px) and (max-width: 767px) and (orientation: landscape) { */
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 </style>
