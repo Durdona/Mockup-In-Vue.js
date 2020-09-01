@@ -232,4 +232,20 @@ export default {
     padding-left: 10px;
   }
 }
+
+/*  ===================== Tablet Others smaller viewport  in portrait mode */
+@media (min-width: 600px) and (orientation: portrait) {
+  .ul-menu {
+    width: auto;
+  }
+  .logo-headline {
+    margin-left: -50px;
+  }
+}
+
+@media (min-width: 600px) and (orientation: landscape) {
+  .nav-menu {
+    height: 16vh;
+  }
+}
 </style>

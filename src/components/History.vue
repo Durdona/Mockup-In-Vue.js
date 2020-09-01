@@ -69,7 +69,7 @@ export default {
         breakpoints: {
           320: {
             slidesPerView: 2,
-            spaceBetween: 10,
+            spaceBetween: 20,
           },
           640: {
             slidesPerView: 2,
@@ -270,6 +270,82 @@ export default {
   }
   .swiper-slide {
     height: auto;
+  }
+}
+
+/*  ================= Tablet Others smaller viewport  in portrait mode  ===============*/
+@media (min-width: 600px) and (orientation: portrait) {
+  .history-title {
+    left: 195px;
+  }
+  .history-story {
+    line-height: 2rem;
+    /* font-size: 1.2rem; */
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    width: 105%;
+    margin-top: -15px;
+  }
+}
+
+/*  ===================== Tablet Others smaller viewport  in Landscape mode */
+@media (min-width: 600px) and (orientation: landscape) {
+  .history-title {
+    left: 200px;
+  }
+  .history-story {
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    width: 105%;
+  }
+}
+
+/*  ===================== Tablets Normals in portrait mode  ====================== */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .history-story {
+    line-height: 2rem;
+    font-size: 1.3rem;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    width: 105%;
+    margin-top: 10px;
+  }
+  #carousel {
+    height: 19vh;
+  }
+  .swiper-container {
+    height: 18vh;
+    margin-top: 4px;
+  }
+}
+
+/*  ==================== Tablets in landscape mode, older desktop monitors */
+@media (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+  .history-story {
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    width: 105%;
+  }
+}
+
+/*  ==================== Monitors with screen width 1200px or above */
+@media (min-width: 1200px) {
+  .history-story {
+    line-height: 2rem;
+    /* font-size: 1.5rem; */
+    padding: 15px;
+    /* background: rgba(255, 255, 255, 0.3); */
+    border-radius: 5px;
+    width: 100%;
+    margin-top: auto;
   }
 }
 </style>

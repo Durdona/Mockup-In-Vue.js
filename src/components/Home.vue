@@ -139,4 +139,62 @@ export default {
     letter-spacing: 4px;
   }
 }
+
+/*  ===================== Tablet Others smaller viewport  in portrait mode */
+@media (min-width: 600px) and (orientation: portrait) {
+  .headline-mask .losangeles,
+  .headline-mask .mountains {
+    font-size: 8rem;
+  }
+  .headline-mask .mountains {
+    letter-spacing: 4px;
+    top: 45%;
+  }
+  .headline-mask .losangeles {
+    top: 33%;
+    letter-spacing: 0;
+  }
+}
+/*  ===================== Tablet Others smaller viewport  in Landscape mode */
+@media (min-width: 600px) and (orientation: landscape) {
+  .headline-mask .mountains,
+  .headline-mask .losangeles {
+    font-size: 8rem;
+  }
+  .headline-mask .losangeles {
+    letter-spacing: 1px;
+    left: 44%;
+    top: 28%;
+  }
+}
+/*  ===================== Tablets Normals in portrait mode  ====================== */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .headline-mask .losangeles,
+  .headline-mask .mountains {
+    font-size: 10rem;
+  }
+  .headline-mask .losangeles {
+    top: 32%;
+    letter-spacing: -1px;
+  }
+}
+
+/*  ==================== Tablets in landscape mode, older desktop monitors */
+@media (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+  .headline-mask .losangeles {
+    top: 29%;
+  }
+}
+
+/*  ==================== Monitors with screen width 1200px or above */
+@media (min-width: 1200px) {
+  .headline-mask .mountains,
+  .headline-mask .losangeles {
+    font-size: 11rem;
+  }
+  .headline-mask .losangeles {
+    letter-spacing: 0;
+    top: 28%;
+  }
+}
 </style>>

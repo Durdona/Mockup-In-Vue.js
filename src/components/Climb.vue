@@ -273,4 +273,118 @@ h1 {
   width: 70%;
   margin: auto;
 }
+
+/*  ===================== Tablet Others smaller viewport  in portrait mode */
+@media (min-width: 600px) and (orientation: portrait) {
+  .climb-tab-menu {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .climb-title {
+    left: 180px;
+  }
+  .climb-header {
+    display: inline-block;
+  }
+  .climb-paragraph {
+    width: 100%;
+    padding-bottom: 5%;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  .mountain1-background,
+  .mountain2-background {
+    width: 100%;
+  }
+  #mountain1-content,
+  #mountain2-content {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    width: 100%;
+  }
+}
+/*  ===================== Tablet Others smaller viewport  in Landscape mode */
+@media (min-width: 600px) and (orientation: landscape) {
+  .climb-paragraph {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 20%;
+    /* font-size: 1.3rem; */
+  }
+}
+/*  ===================== Tablets Normals in portrait mode  ====================== */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .climb-headline {
+    margin-left: -20px;
+  }
+  .climb-tab-menu {
+    width: 100%;
+    justify-content: normal;
+  }
+  .climb-paragraph {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 20%;
+    font-size: 1.3rem;
+    margin-top: auto;
+  }
+  .climb-header {
+    display: flex;
+  }
+  .climb-title {
+    left: 175px;
+  }
+  .mountain1-background,
+  .mountain2-background {
+    width: 100%;
+  }
+  #mountain1-content,
+  #mountain2-content {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    width: 100%;
+  }
+}
+
+/*  ==================== Tablets in landscape mode, older desktop monitors */
+@media (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+  .mountain1-background,
+  .mountain2-background {
+    width: 100%;
+  }
+  #mountain1-content,
+  #mountain2-content {
+    font-size: 1.7rem;
+    line-height: 3rem;
+    width: 55%;
+  }
+  .climb-tab-menu {
+    width: 100%;
+    justify-content: normal;
+  }
+}
+
+/*  ==================== Monitors with screen width 1200px or above */
+@media (min-width: 1200px) {
+  .climb-tab-menu {
+    width: auto;
+  }
+  .mountain1-background,
+  .mountain2-background {
+    margin-left: 40px;
+    width: 50%;
+  }
+  .mountain1-background h1,
+  .mountain2-background h1 {
+    text-align: left;
+  }
+  #mountain1-content,
+  #mountain2-content {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    width: 100%;
+  }
+}
 </style>

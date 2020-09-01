@@ -96,4 +96,6 @@ footer {
 footer .nav-menu {
   height: auto;
 }
+
+/*  =================== Tablet Others smaller viewport  in portrait mode ===============*/
 </style>
