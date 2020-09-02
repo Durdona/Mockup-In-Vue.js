@@ -348,4 +348,37 @@ export default {
     margin-top: auto;
   }
 }
+
+/*  ==================== Monitors with screen width 1366px or above */
+@media (min-width: 1365px) {
+  .history-title {
+    left: 212px;
+  }
+  .history-story {
+    /* font-size: 1.2rem; */
+    line-height: 2rem;
+    padding: 0 10%;
+    margin-top: -40px;
+    background-color: transparent;
+  }
+  .mountain1-background,
+  .mountain2-background {
+    width: 50%;
+    padding: 30px;
+  }
+  #mountain1-content,
+  #mountain2-content {
+    font-size: 1.7rem;
+    line-height: 3rem;
+    width: 65%;
+  }
+}
+
+/*  ==================== Monitors with screen width 1366px or above */
+@media (min-width: 1365px) {
+  .history-story {
+    margin-top: auto;
+    font-size: 1.4rem;
+  }
+}
 </style>

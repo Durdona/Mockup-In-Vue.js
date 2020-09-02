@@ -98,4 +98,12 @@ footer .nav-menu {
 }
 
 /*  =================== Tablet Others smaller viewport  in portrait mode ===============*/
+
+/*  ==================== Monitors with screen width 1200px or above */
+
+@media (min-width: 1200px) {
+  footer .nav-menu {
+    height: 12vh;
+  }
+}
 </style>

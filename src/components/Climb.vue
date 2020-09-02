@@ -348,7 +348,7 @@ h1 {
   }
 }
 
-/*  ==================== Tablets in landscape mode, older desktop monitors */
+/*  ==================== Tablets in landscape mode, older desktop monitors  ====================== */
 @media (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
   .mountain1-background,
   .mountain2-background {
@@ -366,14 +366,14 @@ h1 {
   }
 }
 
-/*  ==================== Monitors with screen width 1200px or above */
+/*  ==================== Monitors with screen width 1200px or above  ====================== */
 @media (min-width: 1200px) {
   .climb-tab-menu {
     width: auto;
   }
   .mountain1-background,
   .mountain2-background {
-    margin-left: 40px;
+    margin: 0;
     width: 50%;
   }
   .mountain1-background h1,
@@ -385,6 +385,32 @@ h1 {
     font-size: 1.5rem;
     line-height: 3rem;
     width: 100%;
+  }
+}
+
+/*  ==================== Monitors with screen width 1366px or above   ====================== */
+@media (min-width: 1365px) {
+  #mountain1,
+  #mountain2 {
+    padding-top: 10%;
+  }
+  #mountain1-content,
+  #mountain2-content {
+    font-size: 1.7rem;
+    line-height: 3rem;
+    width: 65%;
+    margin: 0;
+  }
+  .mountain1-background,
+  .mountain2-background {
+    width: 50%;
+  }
+}
+
+/*  ==================== Monitors with screen width 2560 or above  ====================== */
+@media (min-width: 2500px) {
+  .climb-paragraph {
+    font-size: 1.4rem;
   }
 }
 </style>

@@ -248,4 +248,20 @@ export default {
     height: 16vh;
   }
 }
+
+/*  ==================== Monitors with screen width 1366px or above */
+@media (min-width: 1365px) {
+  .nav-menu {
+    height: 12vh;
+  }
+  .headline-mask .mountains,
+  .headline-mask .losangeles {
+    font-size: 11rem;
+  }
+  .headline-mask .losangeles {
+    top: 29%;
+    letter-spacing: -1px;
+    left: 44%;
+  }
+}
 </style>

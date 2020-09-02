@@ -197,4 +197,28 @@ export default {
     top: 28%;
   }
 }
+
+/*  ==================== Monitors with screen width 1366px or above */
+@media (min-width: 1365px) {
+  .headline-mask .mountains,
+  .headline-mask .losangeles {
+    font-size: 11rem;
+  }
+  .headline-mask .losangeles {
+    top: 29%;
+    letter-spacing: -1px;
+    left: 44%;
+  }
+}
+
+/*  ==================== Monitors with screen width 2560 or above */
+@media (min-width: 2500px) {
+  .headline-mask .mountains,
+  .headline-mask .losangeles {
+    font-size: 15.5rem;
+  }
+  .headline-mask .losangeles {
+    top: 28%;
+  }
+}
 </style>>
